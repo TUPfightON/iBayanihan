@@ -1,4 +1,4 @@
-# ibayani
+# iBayanihan
 
 A new Flutter project.
 
