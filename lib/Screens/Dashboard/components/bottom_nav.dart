@@ -39,36 +39,27 @@ class _BottomNavBarState extends State<BottomNavBar> {
               icon: _selectedIndex == 0
                   ? new Icon(Icons.home, color: Colors.black)
                   : new Icon(Icons.home, color: Colors.grey),
-              title: Text("Home", style: TextStyle(color: Colors.black))
-          ),
-
+              title: Text("Home", style: TextStyle(color: Colors.black))),
           BottomNavigationBarItem(
               icon: _selectedIndex == 1
                   ? new Icon(Icons.shop, color: Colors.black)
                   : new Icon(Icons.shop, color: Colors.grey),
-              title: Text("Shop", style: TextStyle(color: Colors.black))
-          ),
-          
+              title: Text("Shop", style: TextStyle(color: Colors.black))),
           BottomNavigationBarItem(
               icon: _selectedIndex == 2
                   ? new Icon(Icons.chat_bubble, color: Colors.black)
                   : new Icon(Icons.chat_bubble, color: Colors.grey),
-              title: Text("Chat", style: TextStyle(color: Colors.black))
-          ),
-
+              title: Text("Chat", style: TextStyle(color: Colors.black))),
           BottomNavigationBarItem(
               icon: _selectedIndex == 3
                   ? new Icon(Icons.shopping_cart, color: Colors.black)
                   : new Icon(Icons.shopping_cart, color: Colors.grey),
-              title: Text("Chat", style: TextStyle(color: Colors.black))
-          ),
-
+              title: Text("Cart", style: TextStyle(color: Colors.black))),
           BottomNavigationBarItem(
               icon: _selectedIndex == 4
                   ? new Icon(Icons.person, color: Colors.black)
                   : new Icon(Icons.person, color: Colors.grey),
-              title: Text("Chat", style: TextStyle(color: Colors.black))
-          ),
+              title: Text("Profile", style: TextStyle(color: Colors.black))),
         ],
         currentIndex: _selectedIndex,
         selectedItemColor: Colors.black,
