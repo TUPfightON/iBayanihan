@@ -22,8 +22,8 @@ class Body extends StatelessWidget {
             ),
             SizedBox(height: size.height * 0.03),
             SvgPicture.asset(
-              "assets/icons/order-placement.svg",
-              height: size.height * 0.2,
+              "assets/icons/main_logo.svg",
+              height: size.height * 0.3,
             ),
             SizedBox(height: size.height * 0.05),
             RoundedButton(
