@@ -6,7 +6,6 @@ import 'package:ibayani/constants.dart';
 
 class Body extends StatelessWidget {
   final Widget child;
-
   const Body({
     Key key,
     @required this.child,
@@ -26,10 +25,10 @@ class Body extends StatelessWidget {
           ),
           SizedBox(height: size.height * 0.03),
           TextLabel(
-            label: "PASSWORD"
+            label: "PASSWORD" 
           ),
           TextFieldContainer(
-            hint: 'Enter password',
+            hint: 'Enter password', 
           ),
           SizedBox(height: size.height * 0.05),
           FlatButton(
@@ -38,7 +37,16 @@ class Body extends StatelessWidget {
               "LOGIN",
               style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
             ),
-            onPressed: null,
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return LogInScreen();
+                    },
+                  ),
+              );
+            },
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(18.0),
               side: BorderSide(color: Colors.white)
