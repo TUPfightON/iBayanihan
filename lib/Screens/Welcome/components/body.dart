@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:ibayani/Screens/LogIn/login_screen.dart';
 import 'package:ibayani/Screens/SignUp/signup_screen.dart';
 import 'package:ibayani/Screens/Welcome/components/background.dart';
 import 'package:ibayani/components/rounded_button.dart';
@@ -27,7 +28,16 @@ class Body extends StatelessWidget {
             SizedBox(height: size.height * 0.05),
             RoundedButton(
               text: "LOGIN",
-              press: () {},
+              press: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return LoginScreen();
+                    },
+                  ),
+                );
+              },
             ),
             RoundedButton(
               text: "SIGN UP",
