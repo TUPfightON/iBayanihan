@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:ibayani/Screens/LogIn/login_screen.dart';
 import 'package:ibayani/Screens/SignUp/components/background.dart';
 import 'package:ibayani/components/text_field.dart';
 import 'package:ibayani/components/text_label.dart';
-import 'package:ibayani/constants.dart';
 
 class Body extends StatelessWidget {
   final Widget child;
@@ -18,6 +18,10 @@ class Body extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
+          SvgPicture.asset(
+              "assets/icons/HackLogo2.svg",
+              height: size.height * 0.3,
+          ),
           TextLabel(
             label: "EMAIL"
           ),
