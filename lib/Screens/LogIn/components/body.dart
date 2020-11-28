@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ibayani/Screens/Dashboard/dashboard_screen.dart';
 import 'package:ibayani/Screens/LogIn/components/background.dart';
 import 'package:ibayani/components/text_field.dart';
 import 'package:ibayani/components/text_label.dart';
@@ -37,7 +38,16 @@ class Body extends StatelessWidget {
               "LOGIN",
               style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
             ),
-            onPressed: null,
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return DashboardScreen();
+                    },
+                  ),
+              );
+            },
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(18.0),
               side: BorderSide(color: Colors.white)

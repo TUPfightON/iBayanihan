@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ibayani/Screens/LogIn/login_screen.dart';
 import 'package:ibayani/Screens/SignUp/components/background.dart';
 import 'package:ibayani/components/text_field.dart';
 import 'package:ibayani/components/text_label.dart';
@@ -49,7 +50,7 @@ class Body extends StatelessWidget {
                   context,
                   MaterialPageRoute(
                     builder: (context) {
-                      return LogInScreen();
+                      return LoginScreen();
                     },
                   ),
               );
