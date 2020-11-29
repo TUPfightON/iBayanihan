@@ -15,6 +15,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
     return Scaffold(
         backgroundColor: kBackgroundColor,
         appBar: AppBar(),
+
         //Bottom Navigation Bar
         bottomNavigationBar: BottomNavBar(
           
