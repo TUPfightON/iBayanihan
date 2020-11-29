@@ -14,13 +14,7 @@ class ItemFrame extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Container(
-      height: 64,
       decoration: BoxDecoration(
-        image: DecorationImage(
-          image: AssetImage(itemImage),
-          fit: BoxFit.fitHeight,
-          alignment: Alignment.topLeft,
-        ),
         color: kBackgroundColor,
         boxShadow: [
           BoxShadow(
@@ -32,15 +26,16 @@ class ItemFrame extends StatelessWidget {
       ),
       child: Row(
         children: <Widget>[
+          Image.asset(itemImage, width: 90, height: 80,),
           Padding(
-            padding: EdgeInsets.only(left: 120),
+            padding: EdgeInsets.only(left: 20),
             child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Text(itemName,
                       style: TextStyle(
-                          fontSize: 20,
+                          fontSize: 18,
                           fontWeight: FontWeight.bold,
                           color: Colors.black)),
                   Text(itemPrice,
@@ -49,7 +44,7 @@ class ItemFrame extends StatelessWidget {
                 ]),
           ),
           SizedBox(width: size.width * 0.35),
-          Icon(Icons.add_box, color: kPrimaryColor, size: 40),
+          
         ],
       ),
     );

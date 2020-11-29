@@ -20,7 +20,7 @@ class Body extends StatelessWidget {
         children: <Widget>[
           SvgPicture.asset(
               "assets/icons/HackLogo2.svg",
-              height: size.height * 0.3,
+              height: size.height * 0.15,
           ),
           TextLabel(
             label: "EMAIL"
